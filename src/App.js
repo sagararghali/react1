@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Form from './components/Form';
 import Alert from './components/Alert';
 import { useState } from 'react';
-// import About from './components/About';
+import About from './components/About';
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -38,7 +38,7 @@ setTimeout(() => {
         <Navbar title="Sagar" link="connect with" homepage="HOME" mood={mode}  click={click}/>
         <Alert sap={alert}/>
         <Form hi={showalert} head="enter your thought" mood={mode} />
-{/* <About/> */}
+<About/>
     </>
   );
 }
