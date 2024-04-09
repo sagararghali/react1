@@ -26,10 +26,9 @@ export default function Navbar(props) {
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" style={{backgroundColor:props.mood==='light'?'white':'gray', color:props.mood==='light'?'black':'white'}}/>
         <button className="btn btn-outline-success" type="submit">Search</button>
 
-        <div className={`form-check form-switch mx-2 my-1 text-${props.mood==='light'?'dark':'white'}`}>
+        <div className={`colorbutton mx-2 my-1 `}>
            {/* making the text visible with ternary operator(?) */}
-  <input className="form-check-input" onClick={props.click} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label className="form-check-label" htmlFor="flexSwitchCheckDefault" >{props.hi}</label>
+  <button className="form-check-label" type='button' onClick={props.click} >{props.hi}</button>
 </div>
 
       </form>
