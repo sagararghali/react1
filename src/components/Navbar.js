@@ -1,5 +1,5 @@
-
 import PropTypes from 'prop-types'
+
 export default function Navbar(props) {
 
   
@@ -24,11 +24,14 @@ export default function Navbar(props) {
       </ul>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" style={{backgroundColor:props.mood==='light'?'white':'gray', color:props.mood==='light'?'black':'white'}}/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
+                   {/* making the text visible with ternary operator(?) */}
+                     <button className="btn btn-outline-success" type="submit">Search</button>
 
         <div className={`colorbutton mx-2 my-1 `}>
-           {/* making the text visible with ternary operator(?) */}
-  <button className="form-check-label" type='button' onClick={props.click} >{props.hi}</button>
+  <button className="btn btn-primary" type='button' onClick={props.click} >{props.hi}</button>
+</div>
+<div className={`loginbutton mx-2 my-1 `}>
+ <a href="login.js"> <button className="btn btn-primary" type='button' >login</button></a>
 </div>
 
       </form>
