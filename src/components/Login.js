@@ -5,8 +5,6 @@ export default function Login() {
     <div>
 
 <body>
-
-
 <div className="box">
 <form action="/login" method="post">
   <h2>Login </h2>
