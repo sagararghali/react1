@@ -63,7 +63,7 @@ else{
     <> 
         <Navbar title="Sagar" link="connect with" homepage="HOME" mood={mode}  click={click} hi={changecolor}/>
         <Alert sap={alert}/>
-        <Form hi={showalert} head="enter your thought" mood={mode} />
+        <Form hi={showalert} head="present your inner voice into word" mood={mode} />
  {/* <About/>  */}
     </>
   );
