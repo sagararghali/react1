@@ -28,14 +28,7 @@ export default function Navbar(props) {
 
         <div className={`colorbutton mx-2 my-1 `}>
   <button className="btn btn-primary" type='button' onClick={props.click} >{props.hi}</button>
-  <select id="cars" name="cars">
-            <option onClick={props.dark} >darkmode</option>
-            <option onClick={props.green}>greenmode</option>
-            <option onClick={props.blue} >bluemode</option>
-            <option onClick={props.red}>redmode</option>
-            <option onClick={props.light}>redmode</option>
-
-        </select>
+ 
 </div>
 <div className={`loginbutton mx-2 my-1 `}>
  <a href="login.js"> <button className="btn btn-primary" type='button' >login</button></a>

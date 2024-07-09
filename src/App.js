@@ -5,6 +5,7 @@ import Form from './components/Form';
 import Alert from './components/Alert';
 import { useState } from 'react';
 import About from './components/About';
+ 
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -16,9 +17,8 @@ setTimeout(() => {
   setAlert(null);
 }, 1500);
   }
-  // const dark=()=>{
-  //   if
-  // }
+ 
+  
 const [changecolor, setchangecolor] = useState("darkmode");
 
   const[mode,setMode]=useState('light');
@@ -64,10 +64,12 @@ else{
   return ( 
   
     <> 
-        <Navbar title="Sagar" link="connect with" homepage="HOME" mood={mode}  click={click} hi={changecolor}/>
+        <Navbar title="Sagar" link="About" homepage="HOME" mood={mode} click={click} hi={changecolor}/>
         <Alert sap={alert}/>
-        <Form hi={showalert} head="present your inner voice into word" mood={mode} />
+        <Form hi={showalert} head="enter your thoughts" mood={mode} />
  <About/> 
+ <p>hello</p>
+ 
     </>
   );
 }
