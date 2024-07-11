@@ -47,7 +47,7 @@ const downcaseclick=()=>{
 <h3>hello here is your word and characters couter</h3>
 {/* <p>{count.length} letters and {count.split(" ").length} words</p>
 <p>{0.008* count.split(" ").length} minutes to read</p> */}
-<h4>preview all text:</h4>
+<h4>preview all though:</h4>
 <p>{count}</p>
 </div>
 </div>
