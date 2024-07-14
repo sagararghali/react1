@@ -26,10 +26,7 @@ const downcaseclick=()=>{
     setCount(newtext.join(" "));
     props.hi("extra emty space has been removed","success");
 
-    }
- 
-
-  
+  }
   return (
   <>
   <div className={`whole text-${props.mood==='light'?'dark':'light'}`}>

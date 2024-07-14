@@ -1,8 +1,9 @@
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Form from "./components/Form";
 import Alert from "./components/Alert";
-import { useState } from "react";
 import About from "./components/About";
+import Para from "./components/Para";
 
 function App() {
     const [alert, setAlert] = useState(null);
@@ -14,9 +15,7 @@ function App() {
             setAlert(null);
         }, 1500);
     };
-
     const [changecolor, setchangecolor] = useState("darkmode");
-
     const [mode, setMode] = useState("light");
     const click = () => {
         if (mode === "light") {
@@ -58,6 +57,7 @@ function App() {
                 click={click}
                 hi={changecolor}
             />
+                   <Para title="it new title"/>
             <Alert sap={alert} />
             <Form hi={showalert} head="enter your thoughts" mood={mode} />
             <About />
