@@ -58,7 +58,7 @@ function App() {
                 click={click}
                 hi={changecolor}
             />
-                   <Para title="it new title"/>
+                   {/* <Para title="it new title"/> */}
             <Alert sap={alert} />
             <Form hi={showalert} head="enter your thoughts" mood={mode} />
             <About />
