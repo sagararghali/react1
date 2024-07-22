@@ -5,6 +5,7 @@ import Alert from "./components/Alert";
 import About from "./components/About";
 import Para from "./components/Para";
 
+
 function App() {
     const [alert, setAlert] = useState(null);
     const showalert = (message, type) => {
