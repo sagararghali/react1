@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Form from "./components/Form";
 import Alert from "./components/Alert";
-import About from "./components/About";
+// import About from "./components/About";
 import Para from "./components/Para";
 
 
@@ -61,7 +61,7 @@ function App() {
                    {/* <Para title="it new title"/> */}
             <Alert sap={alert} />
             <Form hi={showalert} head="enter your thoughts" mood={mode} />
-            <About />
+            {/* <About /> */}
         </>
     );
 }
